@@ -23,7 +23,7 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 ......
 
 纯图像、纯语音的方向略。
-其它：网络对抗、神经网络攻击/攻防
+其它：网络对抗、神经网络攻击/攻防、
 
 ***
 ## 2. 中层方法
@@ -36,12 +36,12 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 	+ 参数量化Parameter Quantization
 	+ 少参数模型设计Architecture Design
 	+ 低秩逼近Low Rank Approximation
-	+ 动态计算Dynamic Computation、）
+	+ 动态计算Dynamic Computation、
 + 迁移学习Transfer Learning、多任务学习Multi-Task Learning、
 + 语言模型Language Model、预训练模型Pre-Training Model、
 + 图神经网络Graphic Neural Network、
-+ Seq2Seq、Attention、自编码器Auto-Encoder、变分自编码器Variational Auto-Encoder 
-+ 神经图灵机Neural Turing Machine
++ Seq2Seq、Attention、自编码器Auto-Encoder、变分自编码器Variational Auto-Encoder、
++ 神经图灵机Neural Turing Machine、
 ......
 
 ***
@@ -64,10 +64,10 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 
 ***
 ## 5. 经典机器学习
-+ 贝叶斯理论Bayesian Theory、贝叶斯网络Bayesian Network
++ 贝叶斯理论Bayesian Theory、贝叶斯网络Bayesian Network、
 + 核方法Kernel Method、
 + 高斯混合模型Gaussian Mixture Model、高斯过程Gaussian Process、变分估计Variational Approximation、
-+ 时间序列分析、隐马尔可夫模型Hidden Markov Model、马尔可夫蒙特卡罗MCMC、Gibbs采样
++ 时间序列分析、隐马尔可夫模型Hidden Markov Model、马尔可夫蒙特卡罗MCMC、Gibbs采样、
 + 经典算法：
 	+ Decision Tree（ID3、C4.5、CART、...）、Random Forest、GDBT
 	+ K-Means
