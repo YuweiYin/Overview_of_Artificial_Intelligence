@@ -3,7 +3,7 @@ Last Update Date: 2019.10.12
 By [Yuwei Yin](https://github.com/YuweiYin)
 
 ***
-##1. 上层应用
+## 1. 上层应用
 + 对话系统/智能客服
 + 机器翻译
 + 阅读理解
@@ -26,7 +26,7 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 其它：网络对抗、神经网络攻击/攻防
 
 ***
-##2. 中层方法
+## 2. 中层方法
 + 表示学习Learning Representation、解耦表示Disentangle Representation、词句嵌入Embedding、
 + 元学习Meta Learning、小样本学习Few-Shot Learning、零样本学习Zero-Shot Learning、
 + 增量学习Augmentation Learning、终生学习Life-Long Learning、在线学习Online Learning、
@@ -45,7 +45,7 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 ......
 
 ***
-##3. 底层架构
+## 3. 底层架构
 + 卷积网络、循环网络、自适应网络、自组织网络、胶囊网络、深度玻尔兹曼机、
 + 强化学习、深度强化学习、游戏/棋类/机器人、
 + 生成对抗网络、
@@ -53,7 +53,7 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 ......
 
 ***
-##4. 优化理论
+## 4. 优化理论
 + 评价指标优化、损失函数设计
 + 最优化方法/算法设计
 	+ 梯度下降法/ 牛顿法/ SGD/ Momentum/ AdaGrad/ RMSProp/ Adam等的改进
@@ -63,7 +63,7 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 ......
 
 ***
-##5. 经典机器学习
+## 5. 经典机器学习
 + 贝叶斯理论Bayesian Theory、贝叶斯网络Bayesian Network
 + 核方法Kernel Method、
 + 高斯混合模型Gaussian Mixture Model、高斯过程Gaussian Process、变分估计Variational Approximation、
@@ -86,6 +86,6 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 ......
 
 ***
-##其它：
+## 其它：
 图像CV、语音SR、多模态、机器人、
 ......
