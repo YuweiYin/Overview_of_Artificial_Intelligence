@@ -18,12 +18,12 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 [Word2Vec Paper](https://arxiv.org/abs/1301.3781)
 ### 博客
 + **不可思议的Word2Vec**
-	+ 1.[数学原理](https://kexue.fm/archives/4299)
-	+ 2.[训练好的模型](https://kexue.fm/archives/4304)
-	+ 3.[提取关键词](https://kexue.fm/archives/4316)
-	+ 4.[不一样的“相似”](https://kexue.fm/archives/4368)
-	+ 5.[Tensorflow版的Word2Vec](https://kexue.fm/archives/4402)
-	+ 6.[Keras版的Word2Vec](https://kexue.fm/archives/4515)
+	1. [数学原理](https://kexue.fm/archives/4299)
+	2. [训练好的模型](https://kexue.fm/archives/4304)
+	3. [提取关键词](https://kexue.fm/archives/4316)
+	4. [不一样的“相似”](https://kexue.fm/archives/4368)
+	5. [Tensorflow版的Word2Vec](https://kexue.fm/archives/4402)
+	6. [Keras版的Word2Vec](https://kexue.fm/archives/4515)
 + [最小熵原理（四）：“物以类聚”之从图书馆到词向量](https://kexue.fm/archives/6191)
 + [详解 Word2vec 之 Skip-Gram 模型（结构篇）](https://www.leiphone.com/news/201706/PamWKpfRFEI42McI.html)
 
@@ -39,12 +39,12 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 [GloVe Code](https://github.com/stanfordnlp/GloVe)
 ### 博客
 + **更别致的词向量模型**
-	+ 1.[simpler glove](https://kexue.fm/archives/4667)
-	+ 2.[对语言进行建模](https://kexue.fm/archives/4669)
-	+ 3.[描述相关的模型](https://kexue.fm/archives/4671)
-	+ 4.[模型的求解](https://kexue.fm/archives/4675)
-	+ 5.[有趣的结果](https://kexue.fm/archives/4677)
-	+ 6.[代码、分享与结语](https://kexue.fm/archives/4681)
+	1. [simpler glove](https://kexue.fm/archives/4667)
+	2. [对语言进行建模](https://kexue.fm/archives/4669)
+	3. [描述相关的模型](https://kexue.fm/archives/4671)
+	4. [模型的求解](https://kexue.fm/archives/4675)
+	5. [有趣的结果](https://kexue.fm/archives/4677)
+	6. [代码、分享与结语](https://kexue.fm/archives/4681)
 
 ### 使用
 + [GloVe在Linux下的安装与使用](https://www.jianshu.com/p/4148c0c72d95)
@@ -82,17 +82,18 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 + ICLR2017 - [Semi-supervised deep learning by metric embedding](https://arxiv.org/abs/1611.01449.pdf)
 
 ### t-SNE (T-distributed Stochastic Neighbor Embedding)
-+ 前面的做法，但没有约束使得那些在原高维空间中不相似/不相近的点，在降维变换后的低维空间中仍然不相似/不相近。
-+ 这就可能会导致不同类别的样本点也相互靠近、耦合堆叠，不利于分类、聚类。
-+ Trick：一般不会直接在原高维空间做 t-SNE，因为在高维空间计算相似度 S(x_i, x_j) 的计算量很大，所以通常会用比较快的方法(比如PCA)先降到一个较低的维度，然后再用 t-SNE 从这个较低的维度开始继续降维。
-+ 由于 t-SNE 只能对一次性对所有输入的样本点进行降维转换，因此如果后来又出现一个新的样本点，是没法在原来的基础上将这个新样本点降维到同一个低维度的。
-+ 如果要将这个新样本点降维，那就只能用之前的所有数据加上新数据一起拿出来 **从头重新**运行一遍 t-SNE 的。
-+ 因此 t-SNE 不适合于训练集测试集分开的一般情况，它一般用来做数据可视化分析。
-**t-SNE - Similarity Measure**
-+ 记|x|表示 x 的 2-范数/Euclid-Norm，原高维空间计算相似度的函数为 $ S(x_i, x_j) = exp(-\mid x_i - x_j\mid) $ 即高斯核/径向基函数，在低维空间 SNE 采用的还是高斯核 $ S'(z_i, z_j) = exp(-\mid z_i - z_j\mid) $，而 t-SNE 则利用了 t 分布，其计算相似度的函数为 $ S'(z_i, z_j) = 1 / (1 + \mid z_i - z_j\mid) $
-+ t-SNE 这样做的好处在于：（在图像上会看得更直观）
-	+ 设原高维空间中两点 $ x_i $ 和 $ x_j $ 的S函数值 $ S(x_i, x_j) = k $，那么为了保持S'函数值 $ S'(z_i, z_j) $ 也等于 $ k $，需要低维空间中的两点 $ z_i $ 和 $ z_j $ 的距离被拉大一些(相比于 $ x_i $ 和 $ x_j $ 的距离)。
-	+ 根据 t-SNE 的低维空间相似性函数的特性：在原高维空间中距离较近的两点(S函数值较大)，为了在低维空间中的S'函数值仍然保持同等水平，只需被拉开很少的量；而在原高维空间中距离较远的两点(S函数值较小)的两点，为了在低维空间中的S'函数值仍然保持同等水平，需要被拉开很大的量，这会使得原本就相距较远的两点在低维空间中相距更远了。
++ 简要介绍
+	+ 前面的做法，但没有约束使得那些在原高维空间中不相似/不相近的点，在降维变换后的低维空间中仍然不相似/不相近。
+	+ 这就可能会导致不同类别的样本点也相互靠近、耦合堆叠，不利于分类、聚类。而 t-SNE 能够处理这个问题。
+	+ Trick：一般不会直接在原高维空间做 t-SNE，因为在高维空间计算相似度 S(x_i, x_j) 的计算量很大，所以通常会用比较快的方法(比如PCA)先降到一个较低的维度，然后再用 t-SNE 从这个较低的维度开始继续降维。
+	+ 由于 t-SNE 只能对一次性对所有输入的样本点进行降维转换，因此如果后来又出现一个新的样本点，是没法在原来的基础上将这个新样本点降维到同一个低维度的。
+	+ 如果要将这个新样本点降维，那就只能用之前的所有数据加上新数据一起拿出来 **从头重新**运行一遍 t-SNE 的。
+	+ 因此 t-SNE 不适合于训练集测试集分开的一般情况，它一般用来做数据可视化分析。
++ 相似性度量 Similarity Measure
+	+ 记|x|表示 x 的 2-范数/Euclid-Norm，原高维空间计算相似度的函数为 $ S(x_i, x_j) = exp(-\mid x_i - x_j\mid) $ 即高斯核/径向基函数，在低维空间 SNE 采用的还是高斯核 $ S'(z_i, z_j) = exp(-\mid z_i - z_j\mid) $，而 t-SNE 则利用了 t 分布，其计算相似度的函数为 $ S'(z_i, z_j) = 1 / (1 + \mid z_i - z_j\mid) $
+	+ t-SNE 这样做的好处在于：（在图像上会看得更直观）
+		1. 设原高维空间中两点 $ x_i $ 和 $ x_j $ 的S函数值 $ S(x_i, x_j) = k $，那么为了保持S'函数值 $ S'(z_i, z_j) $ 也等于 $ k $，需要低维空间中的两点 $ z_i $ 和 $ z_j $ 的距离被拉大一些(相比于 $ x_i $ 和 $ x_j $ 的距离)。
+		2. 根据 t-SNE 的低维空间相似性函数的特性：在原高维空间中距离较近的两点(S函数值较大)，为了在低维空间中的S'函数值仍然保持同等水平，只需被拉开很少的量；而在原高维空间中距离较远的两点(S函数值较小)的两点，为了在低维空间中的S'函数值仍然保持同等水平，需要被拉开很大的量，这会使得原本就相距较远的两点在低维空间中相距更远了。
 
 ***
 ## 其它
