@@ -14,8 +14,9 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 
 ***
 ## 2.Word2Vec (Word to Vector)
-[Word2Vec WebPage/Code](https://code.google.com/archive/p/word2vec/)
-[Word2Vec Paper](https://arxiv.org/abs/1301.3781)
++ [Word2Vec WebPage/Code](https://code.google.com/archive/p/word2vec/)
++ [Word2Vec Paper](https://arxiv.org/abs/1301.3781)
+
 ### 博客
 + **不可思议的Word2Vec**
 	1. [数学原理](https://kexue.fm/archives/4299)
@@ -34,9 +35,10 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 
 ***
 ## 3.GloVe (Global Vectors)
-[GloVe WebPage](https://nlp.stanford.edu/projects/glove/)
-[GloVe Paper](https://nlp.stanford.edu/pubs/glove.pdf)
-[GloVe Code](https://github.com/stanfordnlp/GloVe)
++ [GloVe WebPage](https://nlp.stanford.edu/projects/glove/)
++ [GloVe Paper](https://nlp.stanford.edu/pubs/glove.pdf)
++ [GloVe Code](https://github.com/stanfordnlp/GloVe)
+
 ### 博客
 + **更别致的词向量模型**
 	1. [simpler glove](https://kexue.fm/archives/4667)
