@@ -1,5 +1,5 @@
 # Embedding
-Last Update Date: 2019.10.15
+Last Update Date: 2019.10.16
 By [Yuwei Yin](https://github.com/YuweiYin)
 
 ***
@@ -9,8 +9,23 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 + [李宏毅 - ML2017 BiliBili](https://www.bilibili.com/video/av10590361/?p=25)
 
 ### 博客
-+ [科学空间 - 苏剑林](https://kexue.fm/category/Big-Data)
-+ [词向量与Embedding究竟是怎么回事？](https://kexue.fm/archives/4122)
++ [Deep Learning in NLP - LICSTAR](http://licstar.net/archives/328)
++ [词向量与Embedding究竟是怎么回事？ - 苏剑林](https://kexue.fm/archives/4122)
+
+### 论文
++ 1986 - G. Hinton - [Learning distributed representations of concepts](https://www.cs.toronto.edu/~hinton/absps/ieee-lre.pdf)
++ 2000 - Wei Xu - [Can Artificial Neural Networks Learn Language Models?](http://www.speech.cs.cmu.edu/Communicator/papers/01291.pdf)
++ 2003 - Y. Bengio - [A Neural Probabilistic Language Model](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
++ 2007 - A. Mnih, G. Hinton - [Three New Graphical Models for Statistical Language Modelling](https://www.cs.toronto.edu/~amnih/papers/threenew.pdf)
++ 2008 - A. Mnih, G. Hinton - [A Scalable Hierarchical Distributed Language Model](https://www.cs.toronto.edu/~amnih/papers/hlbl_final.pdf)
++ 2008 - C&W - [Natural Language Processing (Almost) from Scratch](http://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf)
++ 2010 - [Word representations: a simple and general method for semi-supervised learning](http://www.iro.umontreal.ca/~lisa/pointeurs/turian-wordrepresentations-acl10.pdf)
++ 2010 - T. Mikolov - [Recurrent neural network based language model](https://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf)
++ 2012 - T. Mikolov - [Statistical Language Models based on Neural Networks](https://www.fit.vutbr.cz/~imikolov/rnnlm/thesis.pdf)
++ 2012 - Huang - [Improving Word Representations via Global Context and Multiple Word Prototypes](https://nlp.stanford.edu/pubs/HuangACL12.pdf)
++ 2013 - T. Mikolov - [Linguistic Regularities in Continuous Space Word Representations](https://www.aclweb.org/anthology/N13-1090.pdf)
++ 2015 - [How to Generate a Good Word Embedding?](https://arxiv.org/pdf/1507.05523.pdf)
++ 2016 - *中文* [Word and Document Embeddings based on Neural Network Approaches](https://arxiv.org/abs/1611.05962)
 
 ***
 ## 2.Word2Vec (Word to Vector)
@@ -103,6 +118,8 @@ By [Yuwei Yin](https://github.com/YuweiYin)
 	+ 假设词典里有 10^6 个词/Token，先用 one-hot 编码(或者也可以根据词频采用 Huffman 编码、或者直接实数ID编码、或者二进制数编码等等)，如果使用 one-hot 编码，则会得到一个 10^6 x 10^6 的方阵，十分巨大。而 Embedding 类似于做了一个矩阵分解 Matrix Decomposition/低秩逼近 Low-Rank Approximation，[10^6 x 10^6] = [10^6 x 100] x [100 x 10^6]，假设压缩为100维的 Embedding。
 	+ 而分解开来的两个矩阵分别对应了压缩和解压的功能。以线性变换的角度来看，压缩矩阵实际上是对原方阵的某些行/列的挑选、然后再叠加的操作，那么如果能挑选出“最重要”的部分，低秩逼近就会很成功，因此 Embedding 的表示效果也更佳。
 	+ 这种降维/压缩、挑选重要部分的做法，可以借鉴 PCA 主成分分析的思想。而矩阵分解的思想，可以参考 SVD 奇异值分解、LU 三角分解等。
+	+ 进一步谈谈 Embedding 的“压缩存储”能力，实际上压缩能力并不如想象中那么惊人。首先，为了避免损失太多信息，一般不会把维度压缩得太低。其次，压缩后每一维存储的是实数，一般需要双精度存储，而原本 one-hot 的每一维只需要一个 bit 位即可。最后，one-hot 编码的向量组成的矩阵是满秩、每一行/列仅有一个元素为 1、其余均为 0，这样的矩阵执行矩阵乘法和矩阵求逆是十分容易的，相较于稠密的实数矩阵而言。
+	+ 所以，从原文中抽取重要信息、融合表示上下文信息，才是词向量的核心意义所在，而非“压缩存储”功能，虽然深度神经网络很需要这个压缩工作，否则会出现“维数灾难”，但这也只是神经网络的众多毛病之一而已。
 + Tomas Mikolov (Word2Vec 作者) 解释为何只使用浅层的神经网络(只有一层 hidden layer)，而不采用深层的网络：
 	+ 1.在 Mikolov 之前已经有人做了很多 Word2Vec 的尝试，多数都是使用深度神经网络，但是效果一直没能做得很好，而且深层网络会带来大量的计算开销，以至于无法使用大量数据来训练。Mikolov 使用浅层的网络减少了网络前馈和反馈的计算开销，增大训练数据的量，使得最终效果很好。
 	+ 2.Mikolov 的 [Word2Vec 实现](https://code.google.com/archive/p/word2vec/) 中，有很多优化的 trick & skill，是一个很成功的工程实现，最终做出了实际可行、效果上佳的 Word2Vec 实现。
