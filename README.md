@@ -1,9 +1,5 @@
 # AIML Research Topics
 
-Create Date: 2019.10.12
-
-Last Update Date: 2020.04.22
-
 By [YuweiYin](https://github.com/YuweiYin)
 
 ---

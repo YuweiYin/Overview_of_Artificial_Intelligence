@@ -1,9 +1,5 @@
 # Embedding
 
-Create Date: 2019.10.16
-
-Last Update Date: 2020.04.22
-
 By [YuweiYin](https://github.com/YuweiYin)
 
 ---
