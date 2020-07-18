@@ -1,6 +1,6 @@
 # AI Tasks & Datasets
 
-By [YuweiYin](https://yuweiyin.github.io/)
+By [YuweiYin](https://github.com/YuweiYin)
 
 # 自然语言处理 NLP - Natural Language Processing
 

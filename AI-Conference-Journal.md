@@ -1,6 +1,6 @@
 # AI Conference & Journal
 
-By [YuweiYin](https://yuweiyin.github.io/)
+By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
