@@ -8,8 +8,10 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 - [AI Conference & Journal](./AI-Conference-Journal.md)
 - [AI Dataset](./AI-Dataset.md)
-- [Machine Reading Comprehension](./NLP/Machine_Reading_Comprehension/)
 - [NLP Embedding](./NLP/Embedding/)
+- [PreTraining Language Model](./NLP/PreTraining-Language-Model/)
+- [Machine Reading Comprehension](./NLP/Machine-Reading-Comprehension/)
+- [Dialogue System](./NLP/Dialogue-System/)
 
 # NLP - Natural Language Processing
 

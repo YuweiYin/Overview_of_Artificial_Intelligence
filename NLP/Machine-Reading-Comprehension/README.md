@@ -507,7 +507,14 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 - Author: Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S. Corrado, Jeff Dean
 - Paper Link: [NIPS2013](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and)
-- Paper Download: [NIPS2013](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
+- Paper Download:
+	- [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
+	- [NIPS2013 - Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
+- word2vec code:
+	- [Google Code](https://code.google.com/p/word2vec/)
+	- [Google code](https://code.google.com/archive/p/word2vec/)
+	- [Github Source](https://github.com/tmikolov/word2vec)
+- Trained w2v: [using Google News data](https://github.com/mmihaltz/word2vec-GoogleNews-vectors) 
 
 ```
 @inproceedings{mikolov2013distributed,
@@ -521,23 +528,21 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
-***Word2Vec***: Word to Vector Encoding
+***GloVe***
 
-**paper**: Distributed Representations of Words and Phrases and their Compositionality
+**paper**: GloVe: Global Vectors for Word Representation
 
-- Author: Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S. Corrado, Jeff Dean
-- Paper Link: [NIPS2013](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and)
-- Paper Download: [NIPS2013](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
-- word2vec code: [Google code](https://code.google.com/archive/p/word2vec/)
-- Trained w2v: [using Google News data](https://github.com/mmihaltz/word2vec-GoogleNews-vectors) 
+- Author: Jeffrey Pennington, Richard Socher, Christopher D. Manning
+- [GloVe Homepage](https://nlp.stanford.edu/projects/glove/)
+- [Paper Download](https://nlp.stanford.edu/pubs/glove.pdf)
 
 ```
-@inproceedings{mikolov2013distributed,
-  title={Distributed representations of words and phrases and their compositionality},
-  author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
-  booktitle={Advances in neural information processing systems},
-  pages={3111--3119},
-  year={2013}
+@inproceedings{pennington2014glove,
+  title={Glove: Global vectors for word representation},
+  author={Pennington, Jeffrey and Socher, Richard and Manning, Christopher D},
+  booktitle={Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)},
+  pages={1532--1543},
+  year={2014}
 }
 ```
 
