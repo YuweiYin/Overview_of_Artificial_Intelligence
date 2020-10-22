@@ -4,6 +4,29 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
+- PreTraining Language Model
+	- [CoVe](./CoVe.md)
+	- [ELMo](./ELMo.md)
+	- [Transformer](./Transformer.md)
+	- [GPT](./GPT.md)
+	- [BERT](./BERT.md)
+	- [Transformer-XL](./Transformer-XL.md)
+	- [XLM](./XLM.md)
+	- [ERNIE](./ERNIE.md)
+	- [XLNet](./XLNet.md)
+	- [RoBERTa](./RoBERTa.md)
+	- [MMBET](./MMBET.md)
+	- [CTRL](./CTRL.md)
+	- [ALBERT](./ALBERT.md)
+	- [DistilBERT](./DistilBERT.md)
+	- [T5](./T5.md)
+	- [BART](./BART.md)
+	- [DialoGPT](./DialoGPT.md)
+	- [XLM-RoBERTa](./XLM-RoBERTa.md)
+	- [CamemBERT](./CamemBERT.md)
+	- [FlauBERT](./FlauBERT.md)
+	- [ELECTRA](./ELECTRA.md)
+
 # 1. 语言模型
 
 语言模型 (Language Model) 是给合法语句赋予较大的出现概率，而给罕见的或者不会出现的语句赋予很小的出现概率。
@@ -29,77 +52,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-# 2. 文本表征编码
+# 2. 预训练模型
 
-## 2.1. BPE
-
-***BPE***: 字节对编码 Byte Pair Encoder
-
-**paper**: Neural Machine Translation of Rare Words with Subword Units
-
-- Author: Rico Sennrich, Barry Haddow, Alexandra Birch
-- Paper Link: [arXiv](https://arxiv.org/abs/1508.07909)
-- Paper Download: [arXiv](https://arxiv.org/pdf/1508.07909.pdf)
-
-```
-@article{sennrich2015neural,
-  title={Neural machine translation of rare words with subword units},
-  author={Sennrich, Rico and Haddow, Barry and Birch, Alexandra},
-  journal={arXiv preprint arXiv:1508.07909},
-  year={2015}
-}
-```
-
-## 2.2. Word2Vec
-
-***Word2Vec***: Word to Vector Encoding
-
-**paper-1**: Efficient Estimation of Word Representations in Vector Space
-
-**paper-2**: Distributed Representations of Words and Phrases and their Compositionality
-
-- Author: Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S. Corrado, Jeff Dean
-- Paper Link: [NIPS2013](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and)
-- Paper Download:
-  - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
-  - [NIPS2013 - Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
-- word2vec code:
-  - [Google Code](https://code.google.com/p/word2vec/)
-  - [Google code](https://code.google.com/archive/p/word2vec/)
-  - [Github Source](https://github.com/tmikolov/word2vec)
-- Trained w2v: [using Google News data](https://github.com/mmihaltz/word2vec-GoogleNews-vectors) 
-
-```
-@inproceedings{mikolov2013distributed,
-  title={Distributed representations of words and phrases and their compositionality},
-  author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
-  booktitle={Advances in neural information processing systems},
-  pages={3111--3119},
-  year={2013}
-}
-```
-
-## 2.3. GloVe
-
-**paper**: GloVe: Global Vectors for Word Representation
-
-- Author: Jeffrey Pennington, Richard Socher, Christopher D. Manning
-- [GloVe Homepage](https://nlp.stanford.edu/projects/glove/)
-- [Paper Download](https://nlp.stanford.edu/pubs/glove.pdf)
-
-```
-@inproceedings{pennington2014glove,
-  title={Glove: Global vectors for word representation},
-  author={Pennington, Jeffrey and Socher, Richard and Manning, Christopher D},
-  booktitle={Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)},
-  pages={1532--1543},
-  year={2014}
-}
-```
-
-# 3. 预训练模型
-
-## 3.1. CoVe
+## 2.1. CoVe
 
 ***CoVe***: Contextualized Vector
 
@@ -120,7 +75,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.2. ELMo
+## 2.2. ELMo
 
 ***ELMo***
 
@@ -140,7 +95,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.3. Transformer
+## 2.3. Transformer
 
 ***Transformer***
 
@@ -161,7 +116,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.4. GPT
+## 2.4. GPT
 
 ***GPT***: Generative Pre-Training
 
@@ -189,7 +144,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ***GPT-3***
 
-## 3.5. BERT
+## 2.5. BERT
 
 ***BERT***
 
@@ -211,7 +166,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.6. Transformer-XL
+## 2.6. Transformer-XL
 
 ***Transformer-XL***
 
@@ -230,7 +185,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.7. XLM
+## 2.7. XLM
 
 ***XLM***
 
@@ -249,7 +204,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.8. ERNIE
+## 2.8. ERNIE
 
 ***ERNIE***
 
@@ -268,7 +223,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.9. XLNet
+## 2.9. XLNet
 
 ***XLNet***
 
@@ -288,7 +243,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.10. RoBERTa
+## 2.10. RoBERTa
 
 ***RoBERTa***
 
@@ -307,7 +262,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.11. MMBET
+## 2.11. MMBET
 
 ***MMBET***
 
@@ -326,7 +281,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.12. CTRL
+## 2.12. CTRL
 
 ***CTRL***
 
@@ -345,7 +300,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.13. ALBERT
+## 2.13. ALBERT
 
 ***ALBERT***
 
@@ -364,7 +319,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.14. DistilBERT
+## 2.14. DistilBERT
 
 ***DistilBERT***
 
@@ -383,7 +338,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.15. T5
+## 2.15. T5
 
 ***T5***
 
@@ -402,7 +357,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.16. BART
+## 2.16. BART
 
 ***BART***
 
@@ -421,7 +376,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.17. DialoGPT
+## 2.17. DialoGPT
 
 ***DialoGPT***
 
@@ -440,7 +395,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.18. XLM-RoBERTa
+## 2.18. XLM-RoBERTa
 
 ***XLM-RoBERTa***
 
@@ -459,7 +414,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.19. CamemBERT
+## 2.19. CamemBERT
 
 ***CamemBERT***
 
@@ -478,7 +433,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.20. FlauBERT
+## 2.20. FlauBERT
 
 ***FlauBERT***
 
@@ -497,7 +452,7 @@ By [YuweiYin](https://github.com/YuweiYin)
 }
 ```
 
-## 3.21. ELECTRA
+## 2.21. ELECTRA
 
 ***ELECTRA***
 

@@ -4,6 +4,34 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
+- Evaluation
+	- [Rouge](./Evaluation-Rouge.md)
+	- [BLEU](./Evaluation-BLEU.md)
+	- [METEOR](./Evaluation-METEOR.md)
+- Dataset
+	- 单段落式数据集
+		- [RACE](./Dataset-RACE.md)
+		- [NewsQA](./Dataset-NewsQA.md)
+		- [CNN/Daily Mail](./Dataset-CNN-DailyMail.md)
+		- [SQuAD](./Dataset-SQuAD.md)
+		- [CoQA](./Dataset-CoQA.md)
+	- 多段落式数据集
+		- [MS MARCO](./Dataset-MS-MARCO.md)
+		- [DuReader](./Dataset-DuReader.md)
+		- [QAngaroo](./Dataset-QAngaroo.md)
+		- [HotpotQA](./Dataset-HotpotQA.md)
+	- 文本库式数据集
+		- [ARC](./Dataset-ARC.md)
+- Model
+	- [BiDAF](./Model-BiDAF.md)
+	- [R-Net](./Model-R-Net.md)
+	- [FusionNet](./Model-FusionNet.md)
+	- [ET-RR](./Model-ET-RR.md)
+	- [SDNet](./Model-SDNet.md)
+	- [RoBERTa+AT+KD](./Model-RoBERTa+AT+KD.md)
+	- [Retro-Reader](./Model-Retro-Reader.md)
+	- [SA-Net](./Model-SA-Net.md)
+
 ## 1. MRC 概述
 
 **Book**: Reading for Understanding. Towards an R&D Program in Reading Comprehension
@@ -503,18 +531,32 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ***Word2Vec***: Word to Vector Encoding
 
-**paper**: Distributed Representations of Words and Phrases and their Compositionality
-
-- Author: Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S. Corrado, Jeff Dean
-- Paper Link: [NIPS2013](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and)
+- **paper-1**
+	- Efficient Estimation of Word Representations in Vector Space
+	- Author: Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean
+- **paper-2**
+	- Distributed Representations of Words and Phrases and their Compositionality
+	- Author: Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S. Corrado, Jeff Dean
+- Paper Link:
+	- [arXiv2013](https://arxiv.org/abs/1301.3781)
+	- [NIPS2013](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and)
 - Paper Download:
-	- [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
-	- [NIPS2013 - Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
+ 	- [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
+ 	- [NIPS2013 - Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
 - word2vec code:
-	- [Google Code](https://code.google.com/p/word2vec/)
-	- [Google code](https://code.google.com/archive/p/word2vec/)
-	- [Github Source](https://github.com/tmikolov/word2vec)
+ 	- [Google Code](https://code.google.com/p/word2vec/)
+ 	- [Google code](https://code.google.com/archive/p/word2vec/)
+ 	- [Github Source](https://github.com/tmikolov/word2vec)
 - Trained w2v: [using Google News data](https://github.com/mmihaltz/word2vec-GoogleNews-vectors) 
+
+```
+@article{mikolov2013efficient,
+  title={Efficient estimation of word representations in vector space},
+  author={Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+  journal={arXiv preprint arXiv:1301.3781},
+  year={2013}
+}
+```
 
 ```
 @inproceedings{mikolov2013distributed,
@@ -543,6 +585,25 @@ By [YuweiYin](https://github.com/YuweiYin)
   booktitle={Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)},
   pages={1532--1543},
   year={2014}
+}
+```
+
+---
+
+***FastText***
+
+**paper**: Bag of Tricks for Efficient Text Classification
+
+- Author: Armand Joulin, Edouard Grave, Piotr Bojanowski, Tomas Mikolov
+- [FastText Homepage](https://fasttext.cc/)
+- [Paper Download](https://arxiv.org/pdf/1607.01759.pdf)
+
+```
+@article{joulin2016bag,
+  title={Bag of tricks for efficient text classification},
+  author={Joulin, Armand and Grave, Edouard and Bojanowski, Piotr and Mikolov, Tomas},
+  journal={arXiv preprint arXiv:1607.01759},
+  year={2016}
 }
 ```
 
@@ -740,6 +801,8 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ### 6.1. BiDAF
 
+***BiDAF***
+
 **paper**: Bidirectional Attention Flow for Machine Comprehension
 
 - Author: Minjoon Seo, Aniruddha Kembhavi, Ali Farhadi, Hannaneh Hajishirzi
@@ -756,6 +819,8 @@ By [YuweiYin](https://github.com/YuweiYin)
 ```
 
 ### 6.2. R-net
+
+***R-net***
 
 **paper**: Gated Self-Matching Networks for Reading Comprehension and Question Answering
 
@@ -774,6 +839,8 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ### 6.3. FusionNet
 
+***FusionNet***
+
 **paper**: FusionNet: Fusing via Fully-Aware Attention with Application to Machine Comprehension
 
 - Author: Hsin-Yuan Huang, Chenguang Zhu, Yelong Shen, Weizhu Chen
@@ -790,6 +857,8 @@ By [YuweiYin](https://github.com/YuweiYin)
 ```
 
 ### 6.4. ET-RR
+
+***ET-RR***
 
 **paper**: Learning to Attend On Essential Terms: An Enhanced Retriever-Reader Model for Open-domain Question Answering
 
@@ -808,6 +877,8 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ### 6.5. SDNet
 
+***SDNet***
+
 **paper**: SDNet: Contextualized Attention-based Deep Network for Conversational Question Answering
 
 - Author: Chenguang Zhu, Michael Zeng, Xuedong Huang
@@ -824,3 +895,45 @@ By [YuweiYin](https://github.com/YuweiYin)
   year={2018}
 }
 ```
+
+### 6.6. RoBERTa+AT+KD
+
+***RoBERTa+AT+KD***
+
+**paper**: Technical report on Conversational Question Answering
+
+- Author: Ying Ju, Fubang Zhao, Shijie Chen, Bowen Zheng, Xuefeng Yang, Yunfeng Liu
+- Paper Link: [arXiv](https://arxiv.org/abs/1909.10772)
+- Paper Download: [arXiv](https://arxiv.org/pdf/1909.10772)
+
+```
+@article{ju2019technical,
+  title={Technical report on conversational question answering},
+  author={Ju, Ying and Zhao, Fubang and Chen, Shijie and Zheng, Bowen and Yang, Xuefeng and Liu, Yunfeng},
+  journal={arXiv preprint arXiv:1909.10772},
+  year={2019}
+}
+```
+
+### 6.7. Retro-Reader
+
+***Retro-Reader***
+
+**paper**: Retrospective Reader for Machine Reading Comprehension
+
+- Author: Zhuosheng Zhang, Junjie Yang, Hai Zhao
+- Paper Link: [arXiv](https://arxiv.org/abs/2001.09694)
+- Paper Download: [arXiv](https://arxiv.org/pdf/2001.09694)
+
+```
+@article{zhang2020retrospective,
+  title={Retrospective reader for machine reading comprehension},
+  author={Zhang, Zhuosheng and Yang, Junjie and Zhao, Hai},
+  journal={arXiv preprint arXiv:2001.09694},
+  year={2020}
+}
+```
+
+### 6.8. SA-Net
+
+NOT yet published
