@@ -1,0 +1,165 @@
+# Reading-List & Brief Notes
+
+By [YuweiYin](https://github.com/YuweiYin)
+
+- (√) 2002 - Bleu - *a Method for Automatic Evaluation of Machine Translation*
+	- MT 中最为通用的自动评价指标之一，计算模型输出与真值序列之间的 n-gram 相同数
+- (√) 2008 **DAE** - *Extracting and composing robust features with denoising autoencoders*
+	- 首次提出 DAE 降噪自编码器，即破坏 Seq2Seq 模型中输入给 Encoder 的原句，目标是让 Decoder 能输出完整的、修复的原句。
+- (√) 2015 **MLTDNN** - *Representation Learning Using Multi-Task Deep Neural Networks for Semantic Classification and Information Retrieval*
+	- 作为 MT-DNN 的基础。使用多任务学习，以 Bag-of-Words 特征 (3-grams) 作为输入，低层 DNN 在所有任务上共享参数，最高层是任务特定的。
+- (√) 1511.06709 - **Back-Translation** - *Improving Neural Machine Translation Models with Monolingual Data*
+	- 提出反向翻译技术，有效 (但耗时) 地利用单语语料来提升 NMT 模型性能。也适用于无监督 MT 场景
+- (√) 1511.06732 - *Sequence Level Training with Recurrent Neural Networks*
+	- 直接根据句子级的评价指标 (BLEU 或 ROUGE) 来优化序列生成模型 (基础模型为 LSTM)。
+	- 但 BLEU 评价指标不可微、较复杂，于是利用强化学习思想，设计了一种贪心算法。
+- (√) 1609.08144 - **WordPiece embeddings** - *Google’s Neural Machine Translation System- Bridging the Gap between Human and Machine Translation*
+	- BERT 里用到的切分子词方法，是一种数据驱动的切词方法。每个被切分的子词以 "\_" 开头，便于最终还原为原始词。
+- (√√) 1706.03762 - **Transformer** - *Attention Is All You Need*
+	- 提出 Transformer 模型，抛弃 RNN (梯度消失/爆炸问题、长距离依赖困难)，模型内部使用多层注意力机制 (自注意力、互注意力、掩码单向注意力) + (缩放点积注意力、多头注意力、位置编码)
+- (√) 1708.00107- **CoVe** - *Learned in Translation- Contextualized Word Vectors*
+	- 利用翻译任务来训练 Seq2Seq 模型，并使用 Encoder (双层双向 LSTM) 作为预训练模型
+- (√) 1801.06146 - **ULMFiT** - *Universal Language Model Fine-tuning for Text Classification*
+	- 首个使用 RNN 使用自编码 LM 训练的上下文相关的预训练模型。此外在微调时使用了 slanted triangular learning rates (STLR) 技术，即 先升后降的学习率折线。
+- (√) 1802.05365 - **ELMo** - *Deep contextualized word representations*
+	- 使用多层双向 LSTM 结构进行预训练任务，最终合并两个方向的各层隐状态 作为上下文相关表示
+- (√√) 1810.04805 - **BERT** - *Pre-training of Deep Bidirectional Transformers for Language Understanding*
+	- 使用 Transformer 作为基础结构，提出两种无监督(自监督)预训练任务：
+		- Masked LM (MLM)：(完形填空) 随机选择输入中 15% 的 WordPiece tokens 处理 (其中 80% 概率被 [MASK] 掩盖、10% 概率被替换为随机词汇、10% 概率保持不变)，让模型输出被掩盖的词。（MLM 是 BERT 的核心预训练任务，建模了真正的双向语言模型）
+		- Next Sentence Prediction (NSP)：(二分类任务) 判断句子 A 和句子 B 是否为连续两句。为保证二分类任务正负样本均衡，选定句子 A 后，50% 概率选择语料库中的原本下一句作为 B，50% 概率选择随机一句作为 B。（NSP 预训练任务对 QA 和 NLI 下游任务有效）
+	- 预训练模型规模 BERT-base (L=12, H=768, A=12, Total Parameters=110M) and BERT-large (L=24, H=1024, A=16, Total Parameters=340M)
+- (√) 1901.02860 - **Transformer-XL** - *Attentive Language Models Beyond a Fixed-Length Context*
+	- Transformer 的变形，用于处理超长的输入 (XL: extra long)
+	- Segment-Level Recurrence with State Reuse: 将输入序列切分成多个定长片段，片段与片段之间通过类似于 RNN 的思想联系：处理当前片段时，利用上一个片段(缓存的)所有层的隐向量序列，而上一个片段的所有参数(在当前片段处理时)只参与前向计算，不进行反向传播。
+	- Relative Positional Encodings: 它有多个片段，不能使用原始的(用三角函数生成的)绝对位置编码，只能采用相对位置编码。在每层计算注意力分数时，只考虑 Query 与 Key 的相对位置关系。
+- (√) 1901.07291 - **XLM** - *Cross-lingual Language Model Pretraining*
+	- BERT 在多语言(翻译)上的扩展。对单语语料使用原始 MLM 任务训练，额外对每个 token 设置了 Language embeddings (不同语言的 L-emb 不同)。对双语平行语料使用 Translation Language Modeling (TLM) 任务训练，两种语言 concat 起来输入给模型，还是做 MLM 任务。
+- (√) 1901.11504 - **MT-DNN** - *Multi-Task Deep Neural Networks for Natural Language Understanding*
+	- 基于 MLTDNN，增加了一些辅助任务，进行多任务联合训练。并且用 Transformer 替换 DNN 来获得上下文表征。
+- (√) 1904.09223 - **ERNIE** - *Enhanced Representation through Knowledge Integration*
+	- 百度公司提出的 ERNIE 模型，对 BERT 的输入序列进行 entity-level masking 和 phrase-level masking，这样的掩码掩盖的部分 更可能具有完整的语义信息 (尤其是对中文这样存在严重分词和歧义问题的语言)，从而增强 PLM 性能。
+- (√√) 1905.02450 - **MASS** - *Masked Sequence to Sequence Pre-training for Language Generation*
+	- 属于 DAE，固定选择一个区间长度 k (最佳为 50%)，把输入里的连续 k 个 token 都各自用 [MASK] 掩盖，目标是让 Decoder 自回归地输出被掩盖的区间单词。
+	- Decoder 每个时间步的输入为 原句的"逆" (原来未被掩盖的要被掩盖，原来被掩盖的不被掩盖) 且往右移位一个事件步 (避免看见答案)
+	- 只掩盖一个 token 时等价于原始 BERT (的 MLM 任务)；掩盖全部 token 时等价于原始 GPT。
+- (√) 1905.03197 - **UniLM** - *Unified Language Model Pre-training for Natural Language Understanding and Generation*
+	- 三种注意力掩码，造就三种预训练模式：
+		- Bidirectional LM 则类似于 BERT 的 MLM 任务，可以关注全句内容；
+		- Unidirectional LM 则类似于 GPT 的自回归 LM 任务，只能关注当前输入以及之前输出；
+		- Sequence-to-Sequence LM 则拆分两个部分，一半为 Bidirectional LM 另一半为 Unidirectional LM。
+- (√) 1905.07129 - **ERNIE** - *Enhanced Language Representation with Informative Entities*
+	- 清华大学提出的 ERNIE 模型，融合知识图谱的实体信息作为 BERT 的额外输入和输出，从而增强 PLM 性能。
+- (√) 1906.08237 - **XLNet** - *Generalized Autoregressive Pretraining for Language Understanding*
+	- 鉴于 BERT 在训练阶段用 [MASK] 掩盖了部分词，这会造成 pretrain-finetune discrepancy，从而影响性能；而且由于输入被 [MASK] 破坏了，所以 BERT 也无法像自回归模型那样用连乘法建模联合概率分布，这使得 BERT 难以直接作为 Decoder 生成文本序列。
+	- 因此 XLNet 提出排列语言模型 Permuted LM (PLM)
+	- XLNet 的基础模型为 Transformer-XL
+- (√) 1907.10529 - **SpanBERT** - *Improving Pre-training by Representing and Predicting Spans*
+	- 与 MASS 类似，掩盖一整个连续区间。但使用 span-boundary objective (SBO) 任务预训练，仅仅依靠区间两端 未被掩盖的词 的模型隐层输出 来预测区间内的指定 token
+	- 在 SQuAD 1.1 阅读理解任务、OntoNotes 指代消解任务、TACRED 关系抽取任务 以及 GLUE 上相比于 BERT 都有效果提升
+- (√) 1907.11692 - **RoBERTa** - *A Robustly Optimized BERT Pretraining Approach*
+	- RoBERTa 是原始 BERT 的精细分析和调整版本。
+		- 动态 Masking 机制，避免在不同轮次总是使用同一掩码
+		- 预训练时 只保留 MLM 任务，移除了 NSP 任务 (作者实验发现移除 NSP 对下游任务效果不损害，甚至小有提升)
+		- 训练时间更长 (作者指出 BERT 尚未训练充分)、训练数据更多、batch size 更大 (作者用 bs=2K, steps=125K, lr=7e-4 的设置获得了最好效果，而 BERT-base 为 bs=256)
+		- 更大的 Byte-Pair Encoding (BPR) 词典大小：原始 BERT 使用 30k，而 RoBERTa 使用 50k。但这个方法对模型效果有轻微负作用，作者解释增大词典得到的通用性 比轻微的效果下降更重要。
+- () 1907.12412 - **ERNIE 2.0** - *A Continual Pre-training Framework for Language Understanding* 
+- (√) 1908.04577 - **StructBERT** - *Incorporating Language Structures into Pre-training for Deep Language Understanding*
+	- 用两种任务来进行预训练：
+		- Word Structural Objective: 在 BERT MLM 任务基础上，把未被掩盖的某个(固定长度)区间的 token 顺序打乱，目标除了 MLM 的预测被掩盖词外，还要把乱序区间的正确 token 顺序恢复出来。
+		- Sentence Structural Objective: 扩展 BERT NSP 任务为三分类问题，判断输入的两句话 S1 和 S2 是三种情况中的哪一种：S2 是 S1 的下一句？S2 是 S1 的上一句？S1 和 S2 不是连续句子关系？
+- (√) 1909.00964 - **Unicoder** - *A Universal Language Encoder by Pre-training with Multiple Cross-lingual Tasks*
+	- 对跨语言 BERT 模型 XLM 的改进，使用了如下三种跨语言的预训练任务，最终在 XNLI 和 XQA 任务上达到当时 SOTA：
+		- cross-lingual word recovery: 对平行语料的两句话计算互注意力矩阵后 输入给 Transformer，目标是输出其中一个原句。（此任务意在 从不同语言中学习词与词的关系）
+		- crosslingual paraphrase classification: 判断不同语言的两句话是否互为释义。
+		- crosslingual masked language model: 类似于 XLM 中的带有 Language embeddings 的 MLM 模型。
+- (√) 1909.02950 - **MMBT** - *Supervised Multimodal Bitransformers for Classifying Images and Text*
+	- 多模态扩展，用 ResNet 处理 image 得到图像特征，池化展平后 concat 到原输入序列后面 作为双向 Transformer 的输入。
+- (√) 1909.05858 - **CTRL** - *A Conditional Transformer Language Model for Controllable Generation*
+	- CTRL 是一个基于 Transformer 的可控的 LM (自回归语言模型)，它使用一个控制代码 $c$ 来控制文本生成的具体代码，例如管理其 style, content, and task-specific behavior，该模型也可以预测到底是训练数据的哪一部分对生成序列最有用。
+- (√) 1909.08053 - **Megatron-LM** - *Training Multi-Billion Parameter Language Models Using Model Parallelism*
+	- 用高效的数据并行运算，使用 up to **32 DGX-2H servers** (a total of **512 Tesla V100** SXM3 32GB GPUs) 的设备训练出了 83 亿参数的 GPT-2 模型，以及 39 亿参数的 BERT 模型。
+	- 实验发现：随着模型规模增长，BERT 的效果有下降，但仔细地选择 Layer Normalization (LN) 的位置 以及 在 Transformer 中使用残差连接 能够有效地提升 BERT 类模型的效果。
+- () 1909.10351 - **TinyBERT** - *Distilling BERT for Natural Language Understanding*
+- (√) 1909.11942 - **ALBERT** - *A Lite BERT for Self-supervised Learning of Language Representations*
+	- 对 BERT 进行模型压缩，不损害、甚至能提升模型效果（加速训练、压缩模型）
+		- Factorized embedding parameterization: 用低秩逼近思想，把参数量从 $O(V \times H)$ 降低到 $O(V \times E + E \times H)$，其中 $E \ll H$
+		- Cross-layer parameter sharing: 共享 Encoder 的所有层参数 (即类似于 RNN-Encoder 了)
+		- Inter-sentence coherence loss: 很多研究表明 BERT 的 NSP 任务太简单（因为正负样本可能来自不同文档、不同主题，而不同主题的句子关系判断较为容易），因此 ALBERT 将其修改为 sentence-order prediction (SOP) 任务，负例样本与正例样本来自同一文档 (仅仅是把正例样本的句子顺序反转)，因此要判断两个句子是否为连续句子更有难度。
+	- 另外有个 trick: 作者在训练 1M 步后发现最大的 ALBERT-xxlarge 模型仍未过拟合，于是去掉了 dropout，反而提升了下游任务的效果。
+- () 1910.01108 - **DistilBERT** - *a distilled version of BERT- smaller, faster, cheaper and lighter*
+- (√) 1910.10683 - **T5** - *Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer*
+	- T5 将多种自然语言任务 均转化为同一个 text-to-text 问题，用同一个网络架构 训练多种自然语言任务。训练数据为新提出的庞大数据集 C4: Colossal Clean Crawled Corpus
+	- T5 的模型架构中有利用到 UniLM 中的三种 Attention Mask 机制
+- (√√) 1910.13461 - **BART** - *Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension*
+	- BART 与 MASS 相似，也是直接对 Seq2Seq 模型两大部分联合训练，采用了如下五种 noising 方法 (对 Encoder)：
+		- **Token Masking**：类似 BERT 的 MLM 任务，随机用 [MASK] 掩盖单词
+		- **Token Deletion**：随机删除（对模型来说，删除比 MASK 更难，因为模型根据输入 无法直接知道哪个位置缺失了）
+		- **Text Infilling**：随机掩盖一个或多个区间 (每个区间仅用 **单个 [MASK]** 去掩盖)，区间长度最短为 0 (为 0 时即为插入 [MASK])。区间长度采样自参数 $\lambda=3$ 的 Poisson 分布 (期望和方差均为 $\lambda$)
+		- **Sentence Permutation**：用句号分隔出多个句子，然后随机打乱其顺序
+		- **Document Rotation**：从均匀分布中采样 选定一个 token，然后对句子循环移位，让选定的 token 作为句首单词。
+	- 实验表明 Text Infilling + Sentence Permutation 效果最佳，尤其是 Text Infilling 效果很好（该问题较有难度）
+- (√) 1911.00536 - **DialoGPT** - *Large-Scale Generative Pre-training for Conversational Response Generation*
+	- 基于 Reddit 评论数据的 147M 单轮“对话” 训练的 GPT-2 模型，用于对话回复生成
+- (√) 1911.02116 - **XLM-RoBERTa** - *Unsupervised Cross-lingual Representation Learning at Scale*
+	- 受到 RoBERTa 启发，发现 XLM 和 mBERT 未被还没被训练充分。在一百种语言上训练，效果优于 mBERT、BERT-large、XLNet-large、RoBERTa 和 XLM。
+- (√) 1911.03894 - **CamemBERT** - *a Tasty French Language Model*
+	- 基于 French 法语的 BERT
+- (√) 1912.05372 - **FlauBERT** - *Unsupervised Language Model Pre-training for French*
+	- 基于 French 法语的 BERT
+- (√) 2001.04451 - **Reformer** - *The Efficient Transformer*
+	- 对 Transformer 模型的改进，主要为提升存储效率和计算效率：
+		- 用 locality-sensitive hashing 近似替代 Attention 中的点积。将计算复杂度从 $O(L^2)$ 降至 $O(L \log L)$，其中 $L$ 是序列长度，因此尤其对长序列提升明显。
+		- 用 reversible residual layes 替代标准的残差连接，使得在训练过程中只用存储激活函数值 $1$ 次 而不是 $N$ 次，$N$ 为模型层数。
+		- 把 FFN 层分成小块处理，节约内存。
+- (√√) 2001.08210 - **mBART** - *Multilingual Denoising Pre-training for Neural Machine Translation*
+	- mBART 指出 BART 仅关注于 English corpora，而它是首个采用多语言进行完全 Seq2Seq 训练的模型。它考虑了 25 种语言，包括高资源和低资源场景。
+	- 此外 mBART 还指出过去的许多预训练模型只考虑了部分应用场景，而 mBART 在句子级 MT、文档级 MT 以及无监督(主要是小样本)任务下都表现出色。（但 mBART 不适合于高资源场景）
+- (√) 2003.10555 - **ELECTRA** - *Pre-training Text Encoders as Discriminators Rather Than Generators*
+	- 利用类似 GAN 的训练方法，不采用 Seq2Seq 模型去自回归地生成序列。
+	- 训练时，用一个小的 BERT 类模型作为生成器 G，真正目标训练的模型 ELECTRA 作为判别器 D。
+		- 先对原句随机掩盖词，然后让 G 执行 MLM 任务预测被掩盖的词，输出完整的与原句等长的句子。
+		- G 的输出 输入给 D，D 对每个位置的词进行二分类判断：是否与原句相应位置词相同
+	- 不采用 GAN 中的迭代对抗训练方法，而是直接端到端联合训练，混合损失函数为 MLM 任务和判别任务的加权和
+- (√) 2004.05150 - **Longformer** - *The Long-Document Transformer*
+	- 由于原始 Transformer 结构进行 self-attention 的计算复杂度为 $O(L^2)$，其中 $L$ 为序列长度，因此 Transformer 能处理的序列长度有限，否则计算上太耗时。
+	- Longformer 提出多种注意力机制，包括 Sliding window attention、Dilated sliding window、Global+sliding window，并且这些机制能够很容易地替换原始 Transformer 的自注意层。
+	- Longformer 融合了 local windowed attention 与 task motivated global attention 机制，同时考虑了局部和全局信息。
+	- Longformer 的 Attention 层计算复杂度为 $O(L)$，其中 $L$ 为序列长度
+- (√) 2004.09297 - **MPNet** - *Masked and Permuted Pre-training for Language Understanding*
+	- 结合 BERT 的 Masked LM (MLM) 任务优点 和 XLNet 的 Permuted LM (PLM) 优点，且避免了二者的缺陷：
+		- 在 MLM 任务的基础上 利用 PLM 来把已预测 token 的依赖关系利用起来（这是 BERT 的缺陷，XLNet 解决了，但是 XLNet 又没有充分利用句子里的位置信息）
+		- 利用辅助的位置信息作为输入，使得模型能看到全部句子信息，从而解决了 XLNet 的缺陷。
+- (√√) 2010.02523 - **MTLmNMT** - *Multi-task Learning for Multilingual Neural Machine Translation*
+	- 以机器翻译任务 MT 作为主预训练任务，并且与两个辅助任务 (MLM 和 DAE) 联合训练 来辅助提升预训练效果，从而能够在 MNMT 系统中有效地利用单语语料。
+		- MLM 针对 Encoder 部分，利用与 BERT 类似的自编码机制。
+		- DAE 针对整个 Seq2Seq 模型，利用了 BART 中的三种 noising 方法。
+	- 提出两种任务调度方法：
+		- **Dynamic Data Sampling** 处理数据不平衡的情况，多语言的语料库大小不同，因此引入采样率。一开始对高资源语料采样率高，之后逐渐倾向于低资源语料
+		- **Dynamic Noising Ratio** 用于调控 MLM 中的掩盖率 和 DAE 中 Text Infilling 任务的加噪区间数目，越低则任务越简单。逐渐增加任务难度有助于模型训练
+	- 模型评估：
+		- 在低资源场景下表现好，但在高资源场景下表现不佳
+		- 而 Dynamic Noising Ratio 相比于固定的噪声率而言，没有对效果的明显提升。作者怀疑是数据量不足，因此在大规模单语语料场景下重新测试，发现还是动态的更好。
+		- mBERT 和 XLM-Roberta 是使用了大量多语言语料训练的 PLM（只使用 MLM 任务预训练），同样大规模的 MNMT 模型（只在 NMT 任务上训练）在 NLU 任务上无法达到 PLM 的性能。但是结合了 MT、MLM、DAE 三种任务的 MTLmNMT 模型可以胜过 mBERT 和 XLM-Roberta。这体现了多任务联合训练的重要性。
+
+---
+
+- (√) 2019 NAACL - *Overcoming Catastrophic Forgetting During Domain Adaptation of Neural Machine Translation*
+	- 对预训练+微调范式而言，用 in-domain data 去 fine-tune 后往往导致 general-domain 的模型效果下降，这被称为 catastrophic forgetting effect。
+	- 该研究让模型在 general-domain 进行预训练后，知道哪些参数最关键。于是在用 in-domain data 进行微调时，利用 EWC 正则化方法来限制那些关键参数尽量不被修改。
+- () 2019 NIPS - **Grover** - *Defending Against Neural Fake News*
+- (√) 2018 **GPT-1** - *Improving Language Understanding by Generative Pre-Training*
+	- 基于 Transformer 结构，采用自回归 LM 进行(单向)预训练
+- (√) 2019 **GPT-2** - *Language Models are Unsupervised Multitask Learners*
+	- 相似的模型，更多的参数，更强的效果
+- (√) 2005.14165 **GPT-3** - *Language Models are Few-Shot Learners*
+	- 相似的模型，更多的参数，更强的效果
+
+---
+
+- () 1804.07755 - *Phrase-Based & Neural Unsupervised Machine Translation*
+- () 1808.08949 - *Dissecting Contextual Word Embeddings- Architecture and Representation*
+- () 1904.02679 - *Visualizing Attention in Transformer-Based Language Representation Models*
+- () 1905.05950 - *BERT Rediscovers the Classical NLP Pipeline*
+- () 1906.01502v1 - *How multilingual is Multilingual BERT*
+- () 1908.05620 - *Visualizing and Understanding the Effectiveness of BERT*
+- () 2004.03607 - *Evaluating Machines by their Real-World Language Use*
