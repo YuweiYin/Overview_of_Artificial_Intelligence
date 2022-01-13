@@ -145,7 +145,7 @@ No. | Name | Type | Full Name | Publisher
 18 | ICB |  | [International Joint Conference on Biometrics](http://dblp.uni-trier.de/db/conf/icb/) | IEEE
 19 | IJCNN |  | [International Joint Conference on Neural Networks](http://dblp.uni-trier.de/db/conf/ijcnn/) | IEEE
 20 | PRICAI |  | [Pacific Rim International Conference on Artificial Intelligence](http://dblp.uni-trier.de/db/conf/pricai/) | Springer
-21 | NAACL | 计算语言学 | [The Annual Conference of the North  American Chapter of the Association for Computational Linguistics](http://dblp.uni-trier.de/db/conf/naacl/) | NAACL
+21 | NAACL | Computational Linguistics | [The Annual Conference of the North  American Chapter of the Association for Computational Linguistics](http://dblp.uni-trier.de/db/conf/naacl/) | NAACL
 
 
 ---
