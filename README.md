@@ -4,20 +4,20 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
-## Directory
+<h2 id="yyw-directory">Directory</h2>
 
-- [AI Research Topics](./AI-Research-Topics)
-- [AI Conference & Journal](./AI-Conference-Journal)
-- [AI Dataset](./AI-Dataset)
-- [AI Metrics](./AI-Metrics)
-- [AI Competition](./AI-Competition)
+- [AI Research Topics](./AI-Research-Topics.md)
+- [AI Conference & Journal](./AI-Conference-Journal.md)
+- [AI Dataset](./AI-Dataset.md)
+- [AI Metrics](./AI-Metrics.md)
+- [AI Competition](./AI-Competition.md)
 
 ---
 
 - [Artificial Intelligence Principle](./Artificial-Intelligence-Principle/)
 - [Application](./Application/)
 - [Machine Learning](./Machine-Learning/)
-	- [Explainable-Interpretable-Machine-Learning](./Explainable-Interpretable-Machine-Learning/)
+  - [Explainable-Interpretable-Machine-Learning](./Explainable-Interpretable-Machine-Learning/)
 - [Deep Learning](./Deep-Learning/)
 - [Natural Language Processing](./Natural-Language-Processing/)
 - [Speech](./Speech/)
@@ -34,5 +34,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - [Game Theory and Economic Paradigms](./Game-Theory-And-Economic-Paradigms/)
 - [Humans and AI](./Humans-And-AI/)
 - [AI Ethics, Trust, Fairness](./AI-Ethics-Trust-Fairness/)
+
+---
+
+Currently, I am focusing on **MNMT** (Multilingual Neural Machine Translation) and **XNLP** (Explainable & Interpretable Natural Language Processing).
 
 ---

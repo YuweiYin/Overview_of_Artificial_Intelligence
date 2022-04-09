@@ -1,6 +1,6 @@
 # AI Research Topics
 
-Overview of Artificial Intelligence - [YuweiYin](https://github.com/YuweiYin)
+By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
@@ -8,7 +8,31 @@ Taxonomy reference: AI Conference [AAAI](https://aaai.org/Conferences/AAAI-22/) 
 
 ---
 
-## Application
+<h2 id="yyw-directory">Directory</h2>
+
+- Overview of Artificial Intelligence - AI Research Topics
+  - <a href="#yyw-chapter-ai-topic-application">Application</a>
+  - <a href="#yyw-chapter-ai-topic-machine-learning">Machine Learning</a>
+  - <a href="#yyw-chapter-ai-topic-speech-nlp">Speech & Natural Language Processing</a>
+  - <a href="#yyw-chapter-ai-topic-cv">Computer Vision</a>
+  - <a href="#yyw-chapter-ai-topic-data-mining-knowledge-management">Data Mining & Knowledge Management</a>
+  - <a href="#yyw-chapter-ai-topic-knowledge-representation-reasoning">Knowledge Representation and Reasoning</a>
+  - <a href="#yyw-chapter-ai-topic-planning-routing-scheduling">Planning, Routing, and Scheduling</a>
+  - <a href="#yyw-chapter-ai-topic-agent-system">Agent-based and Multi-agent Systems</a>
+  - <a href="#yyw-chapter-ai-topic-robotics">Robotics</a>
+  - <a href="#yyw-chapter-ai-topic-search-optimization">Search and Optimization</a>
+  - <a href="#yyw-chapter-ai-topic-constraint-satisfaction-optimization">Constraint Satisfaction and Optimization</a>
+  - <a href="#yyw-chapter-ai-topic-uncertainty">Uncertainty in AI</a>
+  - <a href="#yyw-chapter-ai-topic-cognitive">Cognitive Modeling & Cognitive Systems</a>
+  - <a href="#yyw-chapter-ai-topic-game-theory">Game Theory and Economic Paradigms</a>
+  - <a href="#yyw-chapter-ai-topic-human">Humans and AI</a>
+  - <a href="#yyw-chapter-ai-topic-ethics-trust-fairness">AI Ethics, Trust, Fairness</a>
+
+---
+
+<h2 id="yyw-chapter-ai-topic-application">Application</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Domain(s) of Application (APP) | Multidisciplinary Topics and Applications
 :-: | :-:
@@ -40,7 +64,9 @@ APP: Web | Ubiquitous Computing Systems
  | Validation and Verification
  | Web and Social Networks
 
-## Machine Learning
+<h2 id="yyw-chapter-ai-topic-machine-learning">Machine Learning</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Machine Learning (ML) | Machine Learning
 :-: | :-:
@@ -102,7 +128,9 @@ ML: Unsupervised & Self-Supervised Learning | Robustness
  | Unsupervised Learning
  | Weakly Supervised Learning
 
-## Speech & Natural Language Processing
+<h2 id="yyw-chapter-ai-topic-speech-nlp">Speech & Natural Language Processing</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Speech & Natural Language Processing (SNLP) | Natural Language Processing
 :-: | :-:
@@ -132,7 +160,9 @@ SNLP: Syntax -- Tagging, Chunking & Parsing | Text Classification
 SNLP: Text Classification | Tools
 SNLP: Text Mining | 
 
-## Computer Vision
+<h2 id="yyw-chapter-ai-topic-cv">Computer Vision</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Computer Vision (CV) | Computer Vision
 :-: | :-:
@@ -159,7 +189,9 @@ CV: Video Understanding & Activity Analysis | Video analysis and understanding
 CV: Vision for Robotics & Autonomous Driving | Vision and language
 CV: Visual Reasoning & Symbolic Representations | Visual reasoning and symbolic representation
 
-## Data Mining & Knowledge Management
+<h2 id="yyw-chapter-ai-topic-data-mining-knowledge-management">Data Mining & Knowledge Management</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Data Mining & Knowledge Management (DMKM) | Data Mining
 :-: | :-:
@@ -188,7 +220,9 @@ DMKM: Web-Based QA | Mining Semi Structured Data
  | Recommender Systems
  | Theoretical Foundations of Data Mining
 
-## Knowledge Representation and Reasoning
+<h2 id="yyw-chapter-ai-topic-knowledge-representation-reasoning">Knowledge Representation and Reasoning</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Knowledge Representation and Reasoning (KRR) | Knowledge Representation and Reasoning
 :-: | :-:
@@ -214,7 +248,9 @@ KRR: Preferences | Reasoning about Knowledge and Belief
 KRR: Qualitative Reasoning | Semantic Web
 KRR: Reasoning with Beliefs | 
 
-## Planning, Routing, and Scheduling
+<h2 id="yyw-chapter-ai-topic-planning-routing-scheduling">Planning, Routing, and Scheduling</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Planning, Routing, and Scheduling (PRS) | Planning and Scheduling
 :-: | :-:
@@ -237,7 +273,9 @@ PRS: Scheduling Under Uncertainty | Scheduling
 RS: Temporal Planning | Search in Planning and Scheduling
  | Theoretical Foundations of Planning
 
-## Agent-based and Multi-agent Systems
+<h2 id="yyw-chapter-ai-topic-agent-system">Agent-based and Multi-agent Systems</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Multiagent Systems (MAS) | Agent-based and Multi-agent Systems
 :-: | :-:
@@ -264,7 +302,9 @@ MAS: Other Foundations of Multiagent Systems | Formal Verification, Validation a
  | Resource Allocation
  | Trust and Reputation
 
-## Robotics
+<h2 id="yyw-chapter-ai-topic-robotics">Robotics</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Intelligent Robotics (ROB) | Robotics
 :-: | :-:
@@ -281,7 +321,9 @@ ROB: Multi-Robot Systems | Perception
 ROB: Other Foundations of Intelligent Robots | Robotics and Vision
 ROB: State Estimation | 
 
-## Search and Optimization
+<h2 id="yyw-chapter-ai-topic-search-optimization">Search and Optimization</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Search and Optimization (SO) | Search
 :-: | :-:
@@ -300,7 +342,9 @@ SO: Other Foundations of Search & Optimization |
 SO: Runtime Modeling | 
 SO: Sampling/Simulation-Based Search | 
 
-## Constraint Satisfaction and Optimization
+<h2 id="yyw-chapter-ai-topic-constraint-satisfaction-optimization">Constraint Satisfaction and Optimization</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Constraint Satisfaction and Optimization (CSO) | Constraint Satisfaction and Optimization
 :-: | :-:
@@ -316,7 +360,9 @@ CSO: Satisfiability | Satisfiabilty
 CSO: Search | Solvers and Tools
 CSO: Solvers and Tools | 
 
-## Uncertainty in AI
+<h2 id="yyw-chapter-ai-topic-uncertainty">Uncertainty in AI</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Reasoning Under Uncertainty (RU) | Uncertainty in AI
 :-: | :-:
@@ -333,44 +379,50 @@ RU: Stochastic Models & Probabilistic Inference | Statistical Relational AI
 RU: Stochastic Optimization | Tractable Probabilistic Models
 RU: Uncertainty Representations | Uncertainty Representations
 
-## Cognitive Modeling & Cognitive Systems
+<h2 id="yyw-chapter-ai-topic-cognitive">Cognitive Modeling & Cognitive Systems</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - Cognitive Modeling & Cognitive Systems (CMS)
-	- CMS: Adaptive Behavior
-	- CMS: Affective Computing
-	- CMS: Agent & Cognitive Architectures
-	- CMS: Analogical and Conceptual Reasoning
-	- CMS: Applications
-	- CMS: Bayesian Learning
-	- CMS: Brain Modeling
-	- CMS: Computational Creativity
-	- CMS: Introspection and Meta-Cognition
-	- CMS: Memory Storage and Retrieval
-	- CMS: Other Foundations of Cognitive Modeling & Systems
-	- CMS: Simulating Humans
-	- CMS: Social Cognition and Interaction
-	- CMS: Structural Learning and Knowledge Capture
+  - CMS: Adaptive Behavior
+  - CMS: Affective Computing
+  - CMS: Agent & Cognitive Architectures
+  - CMS: Analogical and Conceptual Reasoning
+  - CMS: Applications
+  - CMS: Bayesian Learning
+  - CMS: Brain Modeling
+  - CMS: Computational Creativity
+  - CMS: Introspection and Meta-Cognition
+  - CMS: Memory Storage and Retrieval
+  - CMS: Other Foundations of Cognitive Modeling & Systems
+  - CMS: Simulating Humans
+  - CMS: Social Cognition and Interaction
+  - CMS: Structural Learning and Knowledge Capture
 
-## Game Theory and Economic Paradigms
+<h2 id="yyw-chapter-ai-topic-game-theory">Game Theory and Economic Paradigms</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - Game Theory and Economic Paradigms (GTEP)
-	- GTEP: Adversarial Learning
-	- GTEP: Applications
-	- GTEP: Auctions and Market-Based Systems
-	- GTEP: Behavioral Game Theory
-	- GTEP: Computational Simulations
-	- GTEP: Cooperative Game Theory
-	- GTEP: Coordination and Collaboration
-	- GTEP: Equilibrium
-	- GTEP: Fair Division
-	- GTEP: Game Theory
-	- GTEP: Imperfect Information
-	- GTEP: Mechanism Design
-	- GTEP: Negotiation and Contract-Based Systems
-	- GTEP: Other Foundations of Game Theory & Economic Paradigms
-	- GTEP: Social Choice / Voting
+  - GTEP: Adversarial Learning
+  - GTEP: Applications
+  - GTEP: Auctions and Market-Based Systems
+  - GTEP: Behavioral Game Theory
+  - GTEP: Computational Simulations
+  - GTEP: Cooperative Game Theory
+  - GTEP: Coordination and Collaboration
+  - GTEP: Equilibrium
+  - GTEP: Fair Division
+  - GTEP: Game Theory
+  - GTEP: Imperfect Information
+  - GTEP: Mechanism Design
+  - GTEP: Negotiation and Contract-Based Systems
+  - GTEP: Other Foundations of Game Theory & Economic Paradigms
+  - GTEP: Social Choice / Voting
 
-## Humans and AI
+<h2 id="yyw-chapter-ai-topic-human">Humans and AI</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Humans and AI (HAI) | Humans and AI
 :-: | :-:
@@ -391,7 +443,9 @@ HAI: Learning Human Values and Preferences |
 HAI: Other Foundations of Humans & AI | 
 HAI: Procedural Content Generation & Storytelling | 
 
-## AI Ethics, Trust, Fairness
+<h2 id="yyw-chapter-ai-topic-ethics-trust-fairness">AI Ethics, Trust, Fairness</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 Philosophy and Ethics of AI (PEAI) | AI Ethics, Trust, Fairness
 :-: | :-:

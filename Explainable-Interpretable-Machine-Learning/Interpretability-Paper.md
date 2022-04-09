@@ -4,9 +4,22 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
-## Paper List
+<h2 id="yyw-directory">Directory</h2>
 
-### 2010 - 2015
+- Interpretability Paper
+  - <a href="#yyw-chapter-interpretability-paper-2010-2015">2010 - 2015</a>
+  - <a href="#yyw-chapter-interpretability-paper-2016">2016</a>
+  - <a href="#yyw-chapter-interpretability-paper-2017">2017</a>
+  - <a href="#yyw-chapter-interpretability-paper-2018">2018</a>
+  - <a href="#yyw-chapter-interpretability-paper-2019">2019</a>
+  - <a href="#yyw-chapter-interpretability-paper-2020">2020</a>
+  - <a href="#yyw-chapter-interpretability-paper-2021">2021</a>
+
+---
+
+<h3 id="yyw-chapter-interpretability-paper-2010-2015">2010 - 2015</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2013) (ICCV) HOGgles: Visualizing Object Detection Features
 - (2014) (ECCV) Visualizing and Understanding Convolutional Networks
@@ -17,7 +30,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2015) (ICLR) Striving for Simplicity: The All Convolutional Net
 - (2015) (ICML) Understanding Neural Networks Through Deep Visualization
 
-### 2016
+<h3 id="yyw-chapter-interpretability-paper-2016">2016</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2016) (ACL) Explaining Predictions of Non-Linear Classifiers in NLP
 - (2016) (arXiv) Attentive Explanations: Justifying Decisions and Pointing to the Evidence
@@ -43,7 +58,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2016) (TVCG) Towards Better Analysis of Deep Convolutional Neural Networks
 - (2016) (TVCG) Visualizing the Hidden Activity of Artificial Neural Networks
 
-### 2017
+<h3 id="yyw-chapter-interpretability-paper-2017">2017</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2017) (AAAI) Growing Interpretable Part Graphs on ConvNets via Multi-Shot Learning
 - (2017) (ACL) Visualizing and Understanding Neural Machine Translation
@@ -83,7 +100,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2017) (SOSP) Deepxplore: Automated whitebox testing of deep learning systems
 - (2017) (TVCG) ActiVis: Visual Exploration of Industry-Scale Deep Neural Network Models
 
-### 2018
+<h3 id="yyw-chapter-interpretability-paper-2018">2018</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2018) (AAAI) Anchors: High-Precision Model-Agnostic Explanations
 - (2018) (AAAI) Deep learning for case-based reasoning through prototypes: A neural network that explains its predictions
@@ -145,7 +164,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2018) (TPAMI) Interpreting deep visual representations via network dissection
 - (2018) (WACV) Examining CNN Representations With Respect To Dataset Bias
 
-### 2019
+<h3 id="yyw-chapter-interpretability-paper-2019">2019</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2019) (AAAI) Can You Explain That: Lucid Explanations Help Human-AI Collaborative Image Retrieval
 - (2019) (AAAI) Classifier-agnostic saliency map extraction
@@ -189,7 +210,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2019) (NeurIPS) Towards Automatic Concept-based Explanations
 - (2019) (NMI) Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead
 
-### 2020
+<h3 id="yyw-chapter-interpretability-paper-2020">2020</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2020) (arXiv) A Survey on Neural Network Interpretability
 - (2020) (CVPR) Explaining Knowledge Distillation by Quantifying the Knowledge
@@ -198,9 +221,10 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2020) (ICLR) Interpretable Complex-Valued Neural Networks for Privacy Protection
 - (2020) (ICLR) Knowledge consistency between neural networks and beyond
 
-### 2021
+<h3 id="yyw-chapter-interpretability-paper-2021">2021</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2021) (AAAI) Self-Attention Attribution: Interpreting Information Interactions Inside Transformer
-
 
 ---

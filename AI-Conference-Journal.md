@@ -1,16 +1,45 @@
 # AI Conference & Journal
 
-Overview of Artificial Intelligence - [YuweiYin](https://github.com/YuweiYin)
+By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
-Recommended International Academic Conference and Journal by [China Computer Federation](https://www.ccf.org.cn/) - 2019 ([Link](https://www.ccf.org.cn/Academic_Evaluation/By_category/))
-
-## Recommended Journal (Artificial Intelligence)
-
+- Recommended International Academic Conference and Journal by [China Computer Federation](https://www.ccf.org.cn/) - 2019 ([Link](https://www.ccf.org.cn/Academic_Evaluation/By_category/))
 - [Artificial Intelligence](https://www.ccf.org.cn/Academic_Evaluation/AI/)
 
-### CCF-A Journal
+---
+
+<h2 id="yyw-directory">Directory</h2>
+
+- Overview of Artificial Intelligence - AI Conference & Journal
+  - <a href="#yyw-chapter-ai-journal">Recommended Journal (Artificial Intelligence)</a>
+    - <a href="#yyw-chapter-ccf-a-journal">CCF-A Journal</a>
+    - <a href="#yyw-chapter-ccf-b-journal">CCF-B Journal</a>
+    - <a href="#yyw-chapter-ccf-c-journal">CCF-C Journal</a>
+  - <a href="#yyw-chapter-ai-conference">Recommended Conference (Artificial Intelligence)</a>
+    - <a href="#yyw-chapter-ccf-a-conference">CCF-A Conference</a>
+    - <a href="#yyw-chapter-ccf-b-conference">CCF-B Conference</a>
+    - <a href="#yyw-chapter-ccf-c-conference">CCF-C Conference</a>
+  - <a href="#yyw-chapter-nlp-journal-conference">Recommended Journal & Conference (NLP)</a>
+    - <a href="#yyw-chapter-nlp-journal">NLP Journal</a>
+    - <a href="#yyw-chapter-nlp-conference">NLP Conference</a>
+    - <a href="#yyw-chapter-nlp-related">NLP-related Conference & Journal</a>
+    - <a href="#yyw-chapter-nlp-chinese">Chinese NLP Organization & Journal & Conference</a>
+
+---
+
+<h2 id="yyw-chapter-ai-journal">Recommended Journal (Artificial Intelligence)</h2>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- Sub Chapter
+  - <a href="#yyw-chapter-ccf-a-journal">CCF-A Journal</a>
+  - <a href="#yyw-chapter-ccf-b-journal">CCF-B Journal</a>
+  - <a href="#yyw-chapter-ccf-c-journal">CCF-C Journal</a>
+
+<h3 id="yyw-chapter-ccf-a-journal">CCF-A Journal</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-ai-journal">Back to Chapter Head</a>
 
 No. | Name | Type | Full Name | Publisher
 :-: | :-: | :-: | :-: | :-:
@@ -19,7 +48,10 @@ No. | Name | Type | Full Name | Publisher
 3 | IJCV | Computer Vision | [International Journal of Computer Vision](http://dblp.uni-trier.de/db/journals/ijcv/) | Springer
 4 | JMLR | Machine Learning | [Journal of Machine Learning Research](http://dblp.uni-trier.de/db/journals/jmlr/) | MIT Press
 
-### CCF-B Journal
+<h3 id="yyw-chapter-ccf-b-journal">CCF-B Journal</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-ai-journal">Back to Chapter Head</a>
 
 No. | Name | Type | Full Name | Publisher
 :-: | :-: | :-: | :-: | :-:
@@ -45,7 +77,10 @@ No. | Name | Type | Full Name | Publisher
 20 |  |  | [Neural Networks](http://dblp.uni-trier.de/db/journals/nn/) | Elsevier
 21 |  |  | [Pattern Recognition](http://dblp.uni-trier.de/db/conf/par/) | Elsevier
 
-### CCF-C Journal
+<h3 id="yyw-chapter-ccf-c-journal">CCF-C Journal</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-ai-journal">Back to Chapter Head</a>
 
 No. | Name | Type | Full Name | Publisher
 :-: | :-: | :-: | :-: | :-:
@@ -88,11 +123,18 @@ No. | Name | Type | Full Name | Publisher
 
 ---
 
-## Recommended Conference (Artificial Intelligence)
+<h2 id="yyw-chapter-ai-conference">Recommended Conference (Artificial Intelligence)</h2>
 
-- [Artificial Intelligence](https://www.ccf.org.cn/Academic_Evaluation/AI/)
+- <a href="#yyw-directory">Back to Directory</a>
+- Sub Chapter
+  - <a href="#yyw-chapter-ccf-a-conference">CCF-A Conference</a>
+  - <a href="#yyw-chapter-ccf-b-conference">CCF-B Conference</a>
+  - <a href="#yyw-chapter-ccf-c-conference">CCF-C Conference</a>
 
-### CCF-A Conference
+<h3 id="yyw-chapter-ccf-a-conference">CCF-A Conference</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-ai-conference">Back to Chapter Head</a>
 
 No. | Name | Type | Full Name | Publisher
 :-: | :-: | :-: | :-: | :-:
@@ -104,7 +146,10 @@ No. | Name | Type | Full Name | Publisher
 6 | ICML | Machine Learning | [International Conference on Machine Learning](http://dblp.uni-trier.de/db/conf/icml/) | ACM
 7 | IJCAI | Artificial Intelligence | [International Joint Conference on Artificial Intelligence](http://dblp.uni-trier.de/db/conf/ijcai/) | Morgan Kaufmann
 
-### CCF-B Conference
+<h3 id="yyw-chapter-ccf-b-conference">CCF-B Conference</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-ai-conference">Back to Chapter Head</a>
 
 No. | Name | Type | Full Name | Publisher
 :-: | :-: | :-: | :-: | :-:
@@ -121,7 +166,10 @@ No. | Name | Type | Full Name | Publisher
 11 | AAMAS |  | [International Joint Conference on Autonomous Agents and Multi-agent Systems](http://dblp.uni-trier.de/db/conf/atal/index.html) | Springer
 12 | PPSN |  | [Parallel Problem Solving from Nature](http://dblp.uni-trier.de/db/conf/ppsn/) | Springer
 
-### CCF-C Conference
+<h3 id="yyw-chapter-ccf-c-conference">CCF-C Conference</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-ai-conference">Back to Chapter Head</a>
 
 No. | Name | Type | Full Name | Publisher
 :-: | :-: | :-: | :-: | :-:
@@ -150,16 +198,29 @@ No. | Name | Type | Full Name | Publisher
 
 ---
 
-## Recommended Conference & Journal (NLP)
+<h2 id="yyw-chapter-nlp-journal-conference">Recommended Journal & Conference (NLP)</h2>
 
-### NLP Journal
+- <a href="#yyw-directory">Back to Directory</a>
+- Sub Chapter
+  - <a href="#yyw-chapter-nlp-journal">NLP Journal</a>
+  - <a href="#yyw-chapter-nlp-conference">NLP Conference</a>
+  - <a href="#yyw-chapter-nlp-related">NLP-related Conference & Journal</a>
+  - <a href="#yyw-chapter-nlp-chinese">Chinese NLP Organization & Journal & Conference</a>
+
+<h3 id="yyw-chapter-nlp-journal">NLP Journal</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-nlp-journal-conference">Back to Chapter Head</a>
 
 - [CL](http://cljournal.org/)（Computational Linguistics）[ACL Link](https://www.aclweb.org/portal/cljournal)
 - [TACL](https://transacl.org/index.php/tacl)（Transactions of ACL）[ACL Anthology](https://www.aclweb.org/anthology/venues/tacl/)
 - [TSLP](https://dblp.uni-trier.de/db/journals/tslp/)（ACM Transactions on Speech and Language Processing）
 - [TALIP](https://dblp.uni-trier.de/db/journals/talip/talip13.html)（ACM Transactions on Asian Language Information Processing）
 
-### NLP Conference
+<h3 id="yyw-chapter-nlp-conference">NLP Conference</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-nlp-journal-conference">Back to Chapter Head</a>
 
 - [ACL Web](https://www.aclweb.org/)
 - [ACL Anthology](https://www.aclweb.org/anthology/)
@@ -172,44 +233,50 @@ No. | Name | CCF Level | Full Name | Publisher
 4 | CoNLL | C | [Conference on Computational Natural Language Learning](https://www.aclweb.org/anthology/venues/conll/) | Association for Computational Linguistics
 5 | NAACL | C | [The Annual Conference of the North  American Chapter of the Association for Computational Linguistics](http://naacl.org/) | NAACL
 
-### Related NLP Conference & Journal
+<h3 id="yyw-chapter-nlp-related">NLP-related Conference & Journal</h3>
 
-- Related NLP Journal
-	- [AI](https://www.journals.elsevier.com/artificial-intelligence): Artificial Intelligence
-	- [JAIR](https://www.jair.org/index.php/jair): Journal of AI Research
-	- [JMLR](http://www.jmlr.org/): Journal of Machine Learning Research
-- Related NLP Conference
-	- Artificial Intelligence
-		- [AAAI](http://www.aaai.org/): Association for the Advancement of Artificial Intelligence
-		- [IJCAI](https://www.ijcai.org/): International Joint Conferences on Artificial Intelligence
-	- Information Retrieval & Data Mining
-		- [SIGIR](http://sigir.org/): Special Interest Group on Information Retrieval
-		- [CIKM](http://www.cikmconference.org/): Conference on Information and Knowledge Management
-		- [WWW](https://www.iw3c2.org/): International World Wide Web Conference
-		- [WSDM](http://www.wsdm-conference.org/): Web Search and Data Mining
-	- Machine Learning
-		- [ICML](https://icml.cc/): International Conference on Machine Learning
-		- [NIPS](https://neurips.cc/): Conference on Neural Information Processing Systems
-		- [COLT](http://learningtheory.org/): Annual Conference on Computational Learning Theory
-		- [UAI](http://www.auai.org/): Conference on Uncertainty in Artificial Intelligence
-		- [AISTATS](http://www.aistats.org/): International Conference on Artificial Intelligence and Statistics
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-nlp-journal-conference">Back to Chapter Head</a>
 
-### Chinese NLP Organization & Journal & Conference
+- NLP-related Journal
+  - [AI](https://www.journals.elsevier.com/artificial-intelligence): Artificial Intelligence
+  - [JAIR](https://www.jair.org/index.php/jair): Journal of AI Research
+  - [JMLR](http://www.jmlr.org/): Journal of Machine Learning Research
+- NLP-related Conference
+  - Artificial Intelligence
+    - [AAAI](http://www.aaai.org/): Association for the Advancement of Artificial Intelligence
+    - [IJCAI](https://www.ijcai.org/): International Joint Conferences on Artificial Intelligence
+  - Information Retrieval & Data Mining
+    - [SIGIR](http://sigir.org/): Special Interest Group on Information Retrieval
+    - [CIKM](http://www.cikmconference.org/): Conference on Information and Knowledge Management
+    - [WWW](https://www.iw3c2.org/): International World Wide Web Conference
+    - [WSDM](http://www.wsdm-conference.org/): Web Search and Data Mining
+  - Machine Learning
+    - [ICML](https://icml.cc/): International Conference on Machine Learning
+    - [NIPS](https://neurips.cc/): Conference on Neural Information Processing Systems
+    - [COLT](http://learningtheory.org/): Annual Conference on Computational Learning Theory
+    - [UAI](http://www.auai.org/): Conference on Uncertainty in Artificial Intelligence
+    - [AISTATS](http://www.aistats.org/): International Conference on Artificial Intelligence and Statistics
+
+<h3 id="yyw-chapter-nlp-chinese">Chinese NLP Organization & Journal & Conference</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
+- <a href="#yyw-chapter-nlp-journal-conference">Back to Chapter Head</a>
 
 - Chinese NLP Organization
-	- China Computer Federation ([CCF](https://www.ccf.org.cn/))
-	- Chinese Association for Artificial Intelligence ([CAAI](http://www.caai.cn/))
-	- Chinese Information Processing Society of China ([CIPSC](http://www.cipsc.org.cn/))
+  - China Computer Federation ([CCF](https://www.ccf.org.cn/))
+  - Chinese Association for Artificial Intelligence ([CAAI](http://www.caai.cn/))
+  - Chinese Information Processing Society of China ([CIPSC](http://www.cipsc.org.cn/))
 - Chinese NLP Journal
-	- [Journal of Chinese Information Processing](http://jcip.cipsc.org.cn/CN/volumn/home.shtml)
-	- [Chinese Journal of Computers](http://cjc.ict.ac.cn/)
-	- [Journal of Software](http://www.jos.org.cn/jos/ch/index.aspx)
+  - [Journal of Chinese Information Processing](http://jcip.cipsc.org.cn/CN/volumn/home.shtml)
+  - [Chinese Journal of Computers](http://cjc.ict.ac.cn/)
+  - [Journal of Software](http://www.jos.org.cn/jos/ch/index.aspx)
 - Chinese NLP Conference
-	- CCF International Conference on Natural Language Processing and Chinese Computing ([NLPCC](http://tcci.ccf.org.cn/nlpcc.php))
-	- China National Conference on Computational Linguistics (CCL & YCCL)
-	- China Conference on Knowledge Graph and Semantic Computing (CCKS)
-	- China Conference on Social Media Processing (SMP)
-	- China Conference on Information Retrieval (CCIR)
-	- China Workshop on Machine Translation (CWMT)
-	- Young Scholar Symposium on Natural Language Processing (YSSNLP)
-	- CIPS Summer School
+  - CCF International Conference on Natural Language Processing and Chinese Computing ([NLPCC](http://tcci.ccf.org.cn/nlpcc.php))
+  - China National Conference on Computational Linguistics (CCL & YCCL)
+  - China Conference on Knowledge Graph and Semantic Computing (CCKS)
+  - China Conference on Social Media Processing (SMP)
+  - China Conference on Information Retrieval (CCIR)
+  - China Workshop on Machine Translation (CWMT)
+  - Young Scholar Symposium on Natural Language Processing (YSSNLP)
+  - CIPS Summer School

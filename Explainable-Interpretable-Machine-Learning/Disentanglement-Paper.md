@@ -4,13 +4,26 @@ By [YuweiYin](https://github.com/YuweiYin)
 
 ---
 
-## Paper List
+<h2 id="yyw-directory">Directory</h2>
 
-### Before 2010
+- Disentanglement Paper
+  - <a href="#yyw-chapter-disentanglement-paper-before-2010">Before 2010</a>
+  - <a href="#yyw-chapter-disentanglement-paper-2010-2018">2010 - 2018</a>
+  - <a href="#yyw-chapter-disentanglement-paper-2019">2019</a>
+  - <a href="#yyw-chapter-disentanglement-paper-2020">2020</a>
+  - <a href="#yyw-chapter-disentanglement-paper-2021">2021</a>
+
+---
+
+<h3 id="yyw-chapter-disentanglement-paper-before-2010">Before 2010</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (1992) Learning Factorial Codes by Predictability Minimization
 
-### 2010 - 2018
+<h3 id="yyw-chapter-disentanglement-paper-2010-2018">2010 - 2018</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2011) (ICANN) Transforming auto-encoders
 - (2011) (NIPS) Reading digits in natural images with unsupervised feature learning
@@ -41,7 +54,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2018) (arXiv) Improving Generalization for Abstract Reasoning Tasks Using Disentangled Feature Representations
 - (2018) (arXiv) Towards a Definition of Disentangled Representations
 
-### 2019
+<h3 id="yyw-chapter-disentanglement-paper-2019">2019</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2019) (ICLR) Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer
 - (2019) (ICLR) Overcoming the Disentanglement vs Reconstruction Trade-off via Jacobian Supervision
@@ -75,7 +90,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2019-12) (arXiv) Disentangled Representation Learning with Wasserstein Total Correlation
 - (2019-12) (arXiv) Disentangling Trainability and Generalization in Deep Neural Networks
 
-### 2020
+<h3 id="yyw-chapter-disentanglement-paper-2020">2020</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2020) (ICLR) Disentanglement by Nonlinear ICA with General Incompressible-flow Networks (GIN)
 - (2020) (ICLR) A Meta-Transfer Objective for Learning to Disentangle Causal Mechanisms
@@ -314,7 +331,9 @@ By [YuweiYin](https://github.com/YuweiYin)
 - (2020-12) (arXiv) Disentangled Planning and Control in Vision Based Robotics via Reward Machines
 - (2020-12) (arXiv) Improving Zero-Shot Translation by Disentangling Positional Information
 
-### 2021
+<h3 id="yyw-chapter-disentanglement-paper-2021">2021</h3>
+
+- <a href="#yyw-directory">Back to Directory</a>
 
 - (2021-01) (arXiv) Disentangling homophily, community structure and triadic closure in networks
 - (2021-01) (arXiv) Disentangled Self-Attentive Neural Networks for Click-Through Rate Prediction
